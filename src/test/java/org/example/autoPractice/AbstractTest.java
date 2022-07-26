@@ -24,6 +24,7 @@ public abstract class AbstractTest {
         ChromeOptions options=new ChromeOptions();
         options.addArguments ("start-maximized"); // открытие полноэкранного формата
         options.addArguments ("--incognito");// открытие страницы в режиме инкогнито
+        //options.addArguments("--headless");
         options.addArguments ("version"); //
         options.addArguments ("disable-popup-blocking"); //блокировка всплывающих окон
         eventDriver=new EventFiringWebDriver(new ChromeDriver(options));
